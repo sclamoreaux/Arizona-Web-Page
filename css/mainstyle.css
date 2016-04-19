@@ -41,6 +41,8 @@ a:hover {
   margin-bottom: 30px;
   box-shadow: 0px 3px 3px grey;
   border: 3px solid rgb(230, 187, 153);
+  border-left-color: #319666;
+  border-right-color: #319666;
   /*border-radius: 3%;*/
 
   background: rgba(230,187,153,0.2);
@@ -142,7 +144,7 @@ opacity: .9;
  /*** Primary Section Styling ***/
 
 #primary {
-  border-top: 4px ridge rgba(49, 150, 102, .8);
+  border-top: 4px ridge #319666;
   /*rgba(59, 195, 130, .6);*/
   padding-top: 15px;
   display: flex;
@@ -212,7 +214,6 @@ figure:hover > figcaption span {
 #sidebar {
   margin: 8px 0;
   border: 3px solid rgb(230, 187, 153);
-  /*padding-left: 10px;*/
   /*background-color: rgba(230, 187, 153, .5);*/
   box-shadow: 0px 3px 3px grey;
         /*inset 0px 0px 20px rgba(110, 51, 9, 0.5)*/
@@ -241,7 +242,7 @@ aside p {
   font-weight: bold;
   font-size: 1.1em;
   /*color: rgb(52, 163, 110);*/
-  color: rgb(49, 150, 102);
+  color: #319666;
 }
 
 /*** Secondary Section Styling ***/
@@ -252,9 +253,10 @@ h2 {
   font-size: 2.5em;
   padding-top: 15px;
   text-shadow: 1px 2px 3px grey;
-  border-top: 4px ridge rgba(49, 150, 102, .8);
+  border-top: 4px ridge #319666;
+  /*rgba(49, 150, 102, .8);*/
   /*border-top: 5px solid rgba(59, 195, 130, .6);*/
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 /*#secondary img {
@@ -344,7 +346,34 @@ button {
   	top:1px;
   }
 
+/*** Video Slider Styling ***/
 
+video {
+  max-width: 100%;
+}
+
+#video-slider {
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#video-container {
+  padding: 25px 0;
+  display: none;
+  border-top: 4px ridge #319666;
+}
+
+#video-button {
+  width: 125px;
+}
+
+#video-button img {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 3px;
+}
 
 
 /*** Footer Styling ***/
@@ -353,7 +382,8 @@ footer {
   margin-top: 20px;
   font-size: .9em;
   text-align: center;
-  border-top: 5px ridge rgba(49, 150, 102, .8);
+  border-top: 5px ridge #319666;
+  /*rgba(49, 150, 102, .8);*/
   /*border-top: 5px solid rgba(59, 195, 130, .6);*/
   background-color: #e6bb99;
   padding-bottom: 15px;
