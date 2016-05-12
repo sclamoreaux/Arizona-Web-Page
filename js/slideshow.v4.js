@@ -125,14 +125,14 @@ var OverlayUI = {
         OverlayUI.setImage();
         OverlayUI.setPrevArrow();
         OverlayUI.setNextArrow();
-        $overlay.fadeIn('fast');
+        $overlay.show('fast');
         $(document.body).css('overflow', 'hidden');
         //console.log("Show event fired!");
       },
   //Function that will close slideshow.
   hideOverlay : function(event) {
         event.preventDefault();
-        $overlay.fadeOut('fast');
+        $overlay.hide('fast');
         $(document.body).css('overflow', 'auto');
         //console.log("Close event fired!");
       },
@@ -217,29 +217,3 @@ $overlay.click(OverlayUI.changeImage);
 
 //Create event listener that does the same thing as above, but for pressing left and right arrows on keyboard
 $(document).keydown(OverlayUI.keyPress);
-
-
-//Experimenting with click events on figure elements
-
-$('#primary').on('click', 'figure', function() {
-  console.log('Primary section clicked!');
-
-});
-
-$('#secondary').on('click', 'figure', function(event) {
-  console.log("Clicked on page!");
-  console.log(event);
-    if (event.target.id === "figure-4") {
-      console.log("Clicked on south!");
-      showSelection = slideshow1;
-      OverlayUI.showOverlay();
-    } else if (event.target.id === "figure-5") {
-      console.log("Clicked on central!");
-      showSelection = slideshow2;
-      OverlayUI.showOverlay();
-    } else if (event.target.id === "figure-6") {
-      console.log("Clicked on north!");
-      showSelection = slideshow3;
-      OverlayUI.showOverlay();
-    }
-});
