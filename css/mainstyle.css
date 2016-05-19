@@ -33,17 +33,24 @@ a:hover {
   text-decoration: underline;
 }
 
+/*** Border Styling ***/
+footer, #primary, #video-container, h2 {
+  border-top: 3px solid #319666;
+}
 
+/*** Transitions ***/
+a, figure, figcaption, img, span, button {
+/*transition-property: border-color, background-color, color;*/
+transition: 0.3s;
+}
+
+/*** Intro Styling ***/
 #intro {
-  /*background-color: rgba(230, 187, 153, .5); #e6bb99;*/
   padding: 20px 8px;
   margin-top: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 3px 3px grey;
   border: 3px solid rgb(230, 187, 153);
-  border-left-color: #319666;
-  border-right-color: #319666;
-  /*border-radius: 3%;*/
 
   background: rgba(230,187,153,0.2);
   background: -moz-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
@@ -62,12 +69,10 @@ a:hover {
 
 #intro strong {
   font-size: 1.1em;
+  color: #319666;
+  /*text-shadow: 1px 0px 0px #28754e;*/
 }
 
-  /**Transitions**/
-a, figure, figcaption, button {
-  transition: all 0.3s ease 0s;
-}
 
 /*** Header Styling ***/
 
@@ -144,12 +149,9 @@ opacity: .9;
  /*** Primary Section Styling ***/
 
 #primary {
-  border-top: 4px ridge #319666;
-  /*rgba(59, 195, 130, .6);*/
   padding-top: 15px;
   display: flex;
   flex-direction: column;
-  /*rgb(110, 51, 9);*/
 }
 
 figure {
@@ -164,31 +166,36 @@ figure {
 figcaption {
   position: absolute;
   font-size: .9em;
+  color: white;
   line-height: 1.2;
   padding: .5em;
   bottom: 0;
   background-color: rgba(230, 187, 153, .7);
+  text-shadow: 1px 1px 2px black;
   width: 100%;
 }
 
 figcaption span {
-  display: none;
+  position: relative;
+  left: 150px;
+  opacity: 0;
+  transition-property: left, opacity;
 }
 
-#primary figure:hover {
+figure:hover {
   border-color: rgb(52, 163, 110);
   /*border-style: ridge;*/
   background-color: rgb(52, 163, 110);
   cursor: pointer;
 }
 
-#primary figure:hover > figcaption {
-  color: white;
+figure:hover > figcaption {
   background-color: rgba(52, 163, 110, .5);
 }
 
 figure:hover > figcaption span {
-  display: inline;
+  left: 0px;
+  opacity: 1;
 }
 
 #figures {
@@ -253,98 +260,46 @@ h2 {
   font-size: 2.5em;
   padding-top: 15px;
   text-shadow: 1px 2px 3px grey;
-  border-top: 4px ridge #319666;
-  /*rgba(49, 150, 102, .8);*/
-  /*border-top: 5px solid rgba(59, 195, 130, .6);*/
   margin-top: 0;
+  margin-bottom: 10px;
 }
-
-/*#secondary img {
-  border: 3px solid rgb(230, 187, 153);
-  box-shadow: 0px 3px 3px grey;
-  margin-bottom: 20px;
-}
-
-#secondary img:hover {
-  border-color: rgb(52, 163, 110);
-}*/
 
 #secondary strong {
   font-size: 1.2em;
+  color: #319666;
+  /*color: #34a36e;*/
+}
+
+#secondary figure {
+  overflow: hidden;
 }
 
 #secondary figcaption {
-  display: none;
   font-size: 1em;
+  text-align: center;
+  transform: translateY(100%);
 }
 
-/*#secondary figure:hover > figcaption {
-  display: inline-block;
-}*/
+#secondary figure:hover > figcaption {
+  transform: translateY(0%);
+}
+
+#secondary figure:hover > img {
+  transform: scale(1.1);
+}
 
 .region {
   padding-bottom: 30px;
-
-  /*background-color: rgba(230, 187, 153, .5);*/
-  background: rgba(230,187,153,0);
-  background: -moz-linear-gradient(top, rgba(230,187,153,0) 0%, rgba(230,187,153,0.5) 25%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,187,153,0)), color-stop(25%, rgba(230,187,153,0.5)), color-stop(50%, rgba(230,187,153,0.5)), color-stop(73%, rgba(230,187,153,0.5)), color-stop(80%, rgba(230,187,153,0.5)), color-stop(100%, rgba(230,187,153,0)));
-  background: -webkit-linear-gradient(top, rgba(230,187,153,0) 0%, rgba(230,187,153,0.5) 25%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0) 100%);
-  background: -o-linear-gradient(top, rgba(230,187,153,0) 0%, rgba(230,187,153,0.5) 25%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0) 100%);
-  background: -ms-linear-gradient(top, rgba(230,187,153,0) 0%, rgba(230,187,153,0.5) 25%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0) 100%);
-  background: linear-gradient(to bottom, rgba(230,187,153,0) 0%, rgba(230,187,153,0.5) 25%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bb99', endColorstr='#e6bb99', GradientType=0 );
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6bb99+38,e6bb99+86,e6bb99+100&0+38,1+86,0+100 */
+  background: -moz-linear-gradient(top,  rgba(230,187,153,0) 38%, rgba(230,187,153,1) 86%, rgba(230,187,153,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(230,187,153,0) 38%,rgba(230,187,153,1) 86%,rgba(230,187,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(230,187,153,0) 38%,rgba(230,187,153,1) 86%,rgba(230,187,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e6bb99', endColorstr='#00e6bb99',GradientType=0 ); /* IE6-9 */
 }
 
 .region p {
   padding: 8px;
-  /*background-color: rgba(230, 187, 153, .5);*/
 }
-
-button {
-
-  display: block;
-  width: 100%;
-
-  	-moz-box-shadow:inset 0px 1px 0px 0px #70f5b3;
-  	-webkit-box-shadow:inset 0px 1px 0px 0px #70f5b3;
-  	box-shadow:inset 0px 1px 0px 0px #70f5b3;
-  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5ed198), color-stop(1, #2a8256));
-  	background:-moz-linear-gradient(top, #5ed198 5%, #2a8256 100%);
-  	background:-webkit-linear-gradient(top, #5ed198 5%, #2a8256 100%);
-  	background:-o-linear-gradient(top, #5ed198 5%, #2a8256 100%);
-  	background:-ms-linear-gradient(top, #5ed198 5%, #2a8256 100%);
-  	background:linear-gradient(to bottom, #5ed198 5%, #2a8256 100%);
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5ed198', endColorstr='#2a8256',GradientType=0);
-  	background-color:#5ed198;
-  	/*-moz-border-radius:6px;
-  	-webkit-border-radius:6px;
-  	border-radius:6px;*/
-  	border:1px solid #28754e;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#18422c;
-  	/*font-family:Arial;
-  	font-size:15px;*/
-  	font-weight:bold;
-  	padding:6px 24px;
-  	text-decoration:none;
-  	text-shadow:0px 1px 0px #49d18d;
-  }
-  button:hover {
-  	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2a8256), color-stop(1, #5ed198));
-  	background:-moz-linear-gradient(top, #2a8256 5%, #5ed198 100%);
-  	background:-webkit-linear-gradient(top, #2a8256 5%, #5ed198 100%);
-  	background:-o-linear-gradient(top, #2a8256 5%, #5ed198 100%);
-  	background:-ms-linear-gradient(top, #2a8256 5%, #5ed198 100%);
-  	background:linear-gradient(to bottom, #2a8256 5%, #5ed198 100%);
-  	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2a8256', endColorstr='#5ed198',GradientType=0);
-  	background-color:#2a8256;
-  }
-  button:active {
-  	position:relative;
-  	top:1px;
-  }
 
 /*** Video Slider Styling ***/
 
@@ -361,7 +316,6 @@ video {
 #video-container {
   padding: 25px 0;
   display: none;
-  border-top: 4px ridge #319666;
 }
 
 #video-button {
@@ -372,19 +326,40 @@ video {
   display: inline-block;
   position: relative;
   top: 4px;
-  left: 3px;
+  left: 4px;
+
 }
 
+button {
+  position:relative;
+  top: 3px;
+  color: white;
+  background-color: #319666;
+  border: 3px solid #40c385;
+  border-bottom-color: #277550;
+  border-right-color: #277550;
+  text-shadow: 1px 1px 2px black;
+
+}
+
+button:hover {
+  box-shadow: inset 2px 2px 5px #1d573b;
+  border-color: #277550;
+  border-bottom-color: #40c385;
+  border-right-color: #40c385;
+  text-shadow: 2px 2px 5px black;
+}
+
+button:active {
+  top:4px;
+}
 
 /*** Footer Styling ***/
 
 footer {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: .9em;
   text-align: center;
-  border-top: 5px ridge #319666;
-  /*rgba(49, 150, 102, .8);*/
-  /*border-top: 5px solid rgba(59, 195, 130, .6);*/
   background-color: #e6bb99;
   padding-bottom: 15px;
   box-shadow: 0px 0px 6px grey;
@@ -393,15 +368,18 @@ footer {
 }
 
 .social-icon {
+  position: relative;
+  bottom: 0px;
   box-sizing: content-box;
   width: 30px;
 	height: 30px;
   display: inline-block;
   margin: 0 5px;
+  transition-property: bottom, box-shadow;
+  transition-duration: 0.3s;
 }
 
 .social-icon:hover {
-  position: relative;
-  bottom: 3px;
-  box-shadow: 0 3px 3px grey;
+  bottom: 4px;
+  box-shadow: 0 4px 3px grey;
 }

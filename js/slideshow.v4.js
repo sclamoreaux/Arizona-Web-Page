@@ -120,8 +120,10 @@ var OverlayUI = {
         }
       },
   //Function that will show the slideshow.
-  showOverlay : function() {
+  showOverlay : function(slideshowNumber) {
+        console.log('showing overlay...');
         imageCount = 0;
+        showSelection = slideshowNumber;
         OverlayUI.setImage();
         OverlayUI.setPrevArrow();
         OverlayUI.setNextArrow();
@@ -136,21 +138,6 @@ var OverlayUI = {
         $(document.body).css('overflow', 'auto');
         //console.log("Close event fired!");
       },
-  //Function that will select corresponding slideshow depending on which was clicked.
-  selectShow : function(event) {
-    console.log("Clicked on page!");
-      if (event.target.id === "south") {
-        console.log("Clicked on south!");
-        showSelection = slideshow1;
-        OverlayUI.showOverlay();
-      } else if (event.target.id === "central") {
-        showSelection = slideshow2;
-        OverlayUI.showOverlay();
-      } else if (event.target.id === "north") {
-        showSelection = slideshow3;
-        OverlayUI.showOverlay();
-      }
-    },
 //Function that will change to next/previous photo when respective button is clicked.
   changeImage : function(event) {
       if (event.target.id == 'next') {
@@ -206,8 +193,21 @@ var OverlayUI = {
 
 // 4. EVENT HANDLERS & LISTENERS FOR USER INTERFACE EVENTS
 
-//Create event listener that selects which slideshow to use based on which button user clicks
-$('#secondary').click(OverlayUI.selectShow);
+//Event handlers to display each slideshow for the corresponding figure by passing the name of slideshow array as argument.
+$('#figure-4').click(function(){
+  console.log('figure 4 clicked!');
+  OverlayUI.showOverlay(slideshow1);
+});
+
+$('#figure-5').click(function(){
+  console.log('figure 5 clicked!')
+  OverlayUI.showOverlay(slideshow2);
+});
+
+$('#figure-6').click(function(){
+  console.log('figure 6 clicked!')
+  OverlayUI.showOverlay(slideshow3);
+});
 
 //Create event handler to close overlay upon clicking "close" or pressing escape
 $('#close').click(OverlayUI.hideOverlay);
