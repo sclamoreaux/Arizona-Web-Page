@@ -5,10 +5,17 @@
 <meta charset="utf-8">
 <title>Experience the Beauty of Arizona</title>
 <link rel="stylesheet" href="css/normalize.css">
+
+<link rel="stylesheet" href="build/mediaelementplayer.css" />
+<link rel="stylesheet" href="css/mejs-custom-skin.css" />
+
 <link rel="stylesheet" href="css/mainstyle.css">
 <link rel="stylesheet" href="css/overlay.css">
 <link rel="stylesheet" href="css/responsive.css">
+
 <link href='https://fonts.googleapis.com/css?family=Arvo:400,700|Arizonia' rel='stylesheet' type='text/css'>
+
+<!-- <link rel="stylesheet" href="build/mejs-skins.css"> -->
 </head>
 
 <body>
@@ -76,17 +83,13 @@
 
 </section> <!---primary--->
 
-<div id="video-slider">
   <button id="video-button">Click Me<img src="img/video_camera.png"/></button>
 
   <div id="video-container">
-  <video src="video/GrandCanyon_clip.m4v" preload="metadata" controls>
-    <p>A short clip of tourists enjoying the view at the Grand Canyon.</p>
-  </video>
+    <video class="mejs-treehouse" src="video/ArizonaClips.mp4" preload="metadata" controls poster="">
+      <p>A short clip of tourists enjoying the view at the Grand Canyon.</p>
+    </video>
   </div>
-
-</div>
-
 
 <section id="secondary">
     <h2>Explore Diverse Landscapes...</h2>
@@ -120,16 +123,16 @@
 
 <footer>
 
-<div id="copyright">
-<p>&copy; 2016 Sean Lamoreaux.</p>
-<p>Not an official website. For portfolio purposes only.</p>
-</div>
-
 <div id="social-group">
 <a href="http://twitter.com/ShonRamoro" target="_blank"><img src="img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
 <a href="http://facebook.com/seanlamoreaux" target="_blank"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon"></a>
 <a href="http://shonramoro.tumblr.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr Logo" class="social-icon"></a>
 <a href="#" target="_blank"><img src="img/google-plus.png" alt="Google Plus Logo" class="social-icon"></a>
+</div>
+
+<div id="copyright">
+<p>&copy; 2016 Sean Lamoreaux.</p>
+<p>Not an official website. For portfolio purposes only.</p>
 </div>
 
 </footer>
@@ -155,7 +158,17 @@
 <script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/slideshow.v4.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/mapit.js" type="text/javascript" charset="utf-8"></script>
+<script src="build/mediaelement-and-player.min.js" type="text/javascript" charset="utf-8"></script>
 
+<script>
+  $('audio,video').mediaelementplayer({
+    success: function(player, node) {
+      $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+    },
+    startLanguage: 'en',
+    translationSelector: true
+  });
+</script>
 
 </body>
 
