@@ -1,4 +1,37 @@
 
+
+/*Old CSS for raster social icons and animated pop-up hover effect:*/
+
+.social-icon {
+  position: relative;
+  bottom: 0px;
+  box-sizing: content-box;
+  width: 30px;
+	height: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  transition-property: bottom, box-shadow;
+  transition-duration: 0.3s;
+}
+
+.social-icon:hover {
+  bottom: 4px;
+  box-shadow: 0 4px 3px rgb(162, 118, 87);
+}
+
+
+/*old background for intro paragraph:*/
+
+background: rgba(230,187,153,0.2);
+background: -moz-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,187,153,0.2)), color-stop(20%, rgba(230,187,153,0.5)), color-stop(50%, rgba(230,187,153,0.5)), color-stop(73%, rgba(230,187,153,0.5)), color-stop(80%, rgba(230,187,153,0.5)), color-stop(100%, rgba(230,187,153,0.2)));
+background: -webkit-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: -o-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: -ms-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: linear-gradient(to bottom, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bb99', endColorstr='#e6bb99', GradientType=0 );
+
+
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6bb99+38,e6bb99+100&0+38,1+100 */
 background: -moz-linear-gradient(top,  rgba(230,187,153,0) 38%, rgba(230,187,153,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(230,187,153,0) 38%,rgba(230,187,153,1) 100%); /* Chrome10-25,Safari5.1-6 */

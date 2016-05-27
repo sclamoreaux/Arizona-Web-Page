@@ -1,23 +1,32 @@
 
 /**** RESPONSIVE ****/
 
-@media screen and (min-width: 650px) {
-
-    .container {
-      margin: 0 10%;
-    }
+@media screen and (min-width: 600px) {
 
     #logo {
       font-size: 1.2em;
     }
 
-    #tagline {
+    #tagline h3 {
       font-size: 1.2em;
     }
 
     h2 {
       font-size: 3em;
     }
+
+  #intro, .region {
+    font-size: 1.1em;
+  }
+
+  #intro-p1 {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  footer {
+    font-size: .9em;
+  }
 
 /** Re-align Boxes in Primary section **/
 
@@ -62,17 +71,10 @@
       line-height: 1;
     }
 
-    /*#list-1 {
-      flex-basis: 38%;
-    }
-
-    #list-2 {
-      flex-basis: 58%;
-    }*/
 
 }
 
-@media screen and (min-width: 865px) {
+@media screen and (min-width: 790px) {
 
   header {
     max-height: 540px;
@@ -89,7 +91,7 @@
     padding-bottom: 6%;
   }
 
-  #tagline {
+  #tagline h3 {
     font-size: 1.3em;
   }
 
@@ -108,11 +110,11 @@
   }
 
   #figures {
-    flex-basis: 68%;
+    flex-basis: 70%;
   }
 
   .region {
-    flex-basis: 31%;
+    flex-basis: 32%;
   }
 
   h2 {
@@ -123,6 +125,14 @@
     flex-basis: 28%;
     flex-direction: column;
     font-size: .9em;
+  }
+
+  #figure-1 {
+    flex-basis: 49%;
+  }
+
+  #figure-2 {
+    flex-basis: 49%;
   }
 
   ul {
@@ -136,6 +146,24 @@
     line-height: 1.7;
   }
 
+#social-group {
+  text-align: left;
+  float: left;
+  margin-left: 4%;
+}
+
+#copyright {
+  text-align: right;
+  float: right;
+  margin-right: 4%;
+  position: relative;
+  top: 16px;
+}
+
+footer {
+  overflow: auto;
+  height: 150px;
+}
 /*
   #logo::after {
     content: "V";
@@ -151,10 +179,34 @@
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
+
+  #figures {
+    flex-basis: 69%;
+  }
+
+  #figure-1 {
+    flex-basis: 48%;
+  }
+
+  #figure-2 {
+    flex-basis: 48%;
+  }
 
   .container {
-    max-width: 960px;
+    font-size: 1.1em;
+  }
+
+  .region {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 1075px) {
+
+  .container {
+    max-width: 1010px;
   }
 
   #logo {
@@ -163,6 +215,19 @@
 
   #sidebar {
     font-size: 1em;
+  }
+
+  .region {
+      flex-basis: 31%;
+      font-size: 1.1em;
+    }
+
+  #social-group {
+    margin-left: 8%;
+  }
+
+  #copyright {
+    margin-right: 8%;
   }
 
 }
