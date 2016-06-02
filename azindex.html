@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Experience the Beauty of Arizona</title>
-<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/normalize.css" />
 
 <link rel="stylesheet" href="build/mediaelementplayer.css" />
 <link rel="stylesheet" href="css/mejs-custom-skin.css" />
@@ -127,7 +127,13 @@
 
   <div id="video-container">
 <div class="container">
-    <video class="mejs-treehouse" src="video/ArizonaClips.mp4" preload="metadata" controls poster="">
+    <video class="mejs-treehouse" preload="metadata" controls poster="img/screenshot.png">
+      <source type="video/mp4" src="video/ArizonaClips.mp4" />
+      <source type="video/webm" src="video/ArizonaClips2.webm" />
+      <object type="application/x-shockwave-flash" data="build/flashmediaelement.swf">
+        <param name="movie" value="build/flashmediaelement.swf" />
+        <param name="flashvars" value="controls=true&file=video/ArizonaClips.mp4" />
+    </object>
       <p>A short clip of tourists enjoying the view at the Grand Canyon.</p>
     </video>
 </div>
