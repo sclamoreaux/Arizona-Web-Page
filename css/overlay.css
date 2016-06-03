@@ -35,7 +35,7 @@
   border-color: rgb(230, 187, 153);
 }
 
-#img-box, #map-box {
+#img-box {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
@@ -62,7 +62,11 @@
   margin-top: 0;
 }
 
-iframe {
+#map-box {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  clear: both;
   border: 3px solid rgb(230, 187, 153);
-  max-width: 100%;
+  border-radius: 5px;
 }
