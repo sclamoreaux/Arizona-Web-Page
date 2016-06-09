@@ -3,82 +3,82 @@
 
 var slideshow1 = [
   photo1 = {
-    url: 'img/catalinamtns1.jpg',
-    captionText: 'A prickly pear cactus in springtime bloom near Finger Rock trail.'
+    url: 'img/southphotos/fingerrock.jpg',
+    captionText: 'Prickly pear cactus in springtime bloom near Finger Rock trail - Tucson.'
   },
   photo2 = {
-    url: 'img/southphotos/catalinastatepark1.jpg',
-    captionText: 'Due to late summer rain, creeks flow in Catalina State Park in autumn.'
+    url: 'img/southphotos/catalinastatepark.jpg',
+    captionText: 'Creek flowing in Catalina State Park in autumn - Oro Valley.'
   },
   photo3 = {
-    url: 'img/southphotos/mtlemmon1.jpg',
-    captionText: 'A flowery meadow by the scenic road up to Mount Lemmon.'
+    url: 'img/southphotos/mountlemmon.jpg',
+    captionText: 'Flowery meadow by the scenic road to Mount Lemmon - north of Tucson.'
   },
   photo4 = {
     url: 'img/southphotos/sabinocanyon1.jpg',
-    captionText: 'Sabino Canyon is an ever-popular area for recreation in the desert.'
+    captionText: 'Sabino Canyon, a popular area for desert recreation - Tucson.'
   },
   photo5 = {
     url: 'img/southphotos/chiricahua1.jpg',
-    captionText: 'The pines and vertical rock formations of Chiricahua National Monument.'
+    captionText: 'Chiricahua National Monument - southeastern Arizona.'
   },
   photo6 = {
     url: 'img/southphotos/pimacanyon1.jpg',
-    captionText: 'Pima Canyon bursts into bloom in the springtime.'
+    captionText: 'Springtime blossoms on Pima Canyon trail - Tucson.'
   }
 ];
 
 var slideshow2 = [
   photo1 = {
-    url: 'img/bellrock.jpg',
-    captionText: 'The striking formations of Bell Rock and Courthouse Butte in Sedona.'
+    url: 'img/centralphotos/bellrock2.jpg',
+    captionText: 'Bell Rock and Courthouse Butte formations - Sedona.'
   },
   photo2 = {
     url: 'img/centralphotos/oakcreek1.jpg',
-    captionText: 'Gorgeous and green, Oak Creek Canyon is perfect for a summer hike.'
+    captionText: 'West Fork trail in Oak Creek Canyon - Sedona.'
   },
   photo3 = {
-    url: 'img/centralphotos/sedona2.jpg',
-    captionText: 'The red rocks of Sedona seem to glow magically at sunset.'
+    url: 'img/centralphotos/cactusgarden.jpg',
+    captionText: 'Cacti in the Desert Botanical Garden - Phoenix.'
   },
   photo4 = {
     url: 'img/centralphotos/cathedralrock.jpg',
-    captionText: 'The iconic Cathedral Rock looms over Oak Creek.'
+    captionText: 'Cathedral Rock looms over Oak Creek - Sedona.'
   },
   photo5 = {
     url: 'img/centralphotos/superstitionmtns2.jpg',
-    captionText: 'The jagged peaks of the Superstition Mountains cut into the sky.'
+    captionText: 'Superstition Mountains in Lost Dutchman State Park - Apache Junction.'
   },
   photo6 = {
     url: 'img/centralphotos/montezumacastle.jpg',
-    captionText: 'The ancient Sinaguan ruins known as Montezuma Castle.'
+    captionText: 'Sinaguan ruins known as Montezuma Castle - Camp Verde.'
   }
 ];
 
 var slideshow3 = [
   photo1 = {
-    url: 'img/horseshoebend.jpg',
-    captionText: 'The remarkable view over Horseshoe Bend near Page.'
+    url: 'img/northphotos/walnutcanyon.jpg',
+    captionText: 'Walnut Canyon National Monument - Flagstaff.'
   },
   photo2 = {
-    url: 'img/northphotos/page1.jpg',
-    captionText: 'The vastness of our northern desert is a feast for the eyes.'
+    url: 'img/northphotos/marblecanyon.jpg',
+    captionText: 'View from Navajo Bridge - Marble Canyon.'
   },
   photo3 = {
     url: 'img/northphotos/flagstaff.jpg',
-    captionText: 'Flagstaff offers a mix of grassy meadows and forested mountain peaks.'
+    captionText: 'Grassy meadow by Highway 89 - near Flagstaff.'
   },
   photo4 = {
-    url: 'img/northphotos/grandcanyon2.jpg',
-    captionText: 'The Grand Canyon is an unforgettable, incomparable destination.'
+    url: 'img/northphotos/grandcanyon3.jpg',
+    captionText: 'South Rim of Grand Canyon National Park - northern Arizona.'
   },
   photo5 = {
-    url: 'img/northphotos/grandcanyon3.jpg',
-    captionText: 'The sheer vastness of the canyon reminds us how very small we are.'
+    url: 'img/northphotos/horseshoebend.jpg',
+    captionText: 'Horseshoe Bend on the Colorado River - Page.'
   },
   photo6 = {
-    url: 'img/northphotos/grandcanyon4.jpg',
-    captionText: 'It can be a bit frightening to gaze into its depths.'
+    url: 'img/northphotos/lonelydell.jpg',
+    captionText: 'Cliffs of Lonely Dell Ranch by Lee\'s Ferry - northern Arizona.'
   }
 ];
 
