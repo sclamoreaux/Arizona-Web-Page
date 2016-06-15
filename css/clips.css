@@ -1,4 +1,13 @@
+/*Old CSS for aside gradient*/
 
+background: rgba(230,187,153,0.2);
+background: -moz-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,187,153,0.2)), color-stop(20%, rgba(230,187,153,0.5)), color-stop(50%, rgba(230,187,153,0.5)), color-stop(73%, rgba(230,187,153,0.5)), color-stop(80%, rgba(230,187,153,0.5)), color-stop(100%, rgba(230,187,153,0.2)));
+background: -webkit-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: -o-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: -ms-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+background: linear-gradient(to bottom, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bb99', endColorstr='#e6bb99', GradientType=0 );
 
 /*Old CSS for raster social icons and animated pop-up hover effect:*/
 

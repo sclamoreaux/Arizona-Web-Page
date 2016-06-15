@@ -24,7 +24,7 @@ img {
 }
 
 a {
-  color: rgb(110, 51, 9);
+  color: #6e3309;
   text-decoration: none;
 }
 
@@ -34,8 +34,8 @@ a:hover {
 }
 
 /*** Border Styling ***/
-footer, #primary, #video-container, #secondary {
-  border-top: 5px ridge rgba(49,150,102,.7);
+#primary, #video-container, #secondary {
+  border-top: 4px solid rgba(49,150,102,.9);
 }
 
 figure, aside, img, #close, #map-close, iframe, .region {
@@ -44,7 +44,7 @@ figure, aside, img, #close, #map-close, iframe, .region {
 
 /*** Transitions ***/
 
-figure, figcaption, img, span, .map-pin {
+figure, figcaption, img, figcaption span, .map-pin {
 transition-duration: 0.4s;
 transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
 }
@@ -59,9 +59,9 @@ transition-duration: 0.3s;
 
 /*** Intro Styling ***/
 #intro {
-  padding: 20px 5px 15px 5px;
+  padding: 15px 5px 10px 5px;
   text-align: center;
-
+  /*text-shadow: 1px 1px 2px white;*/
 }
 
 #intro, section, h2, aside {
@@ -72,26 +72,27 @@ transition-duration: 0.3s;
   font-size: 2em;
   color: #319666;
   font-family: 'Arizonia', cursive;
+  text-shadow: 1px 1px 1px white;
 }
 
 #intro-p1 {
   border-top: 5px groove rgb(230, 187, 153);
-  /*border-bottom: 5px double rgb(230, 187, 153);*/
+  /*border-bottom: 5px ridge rgb(230, 187, 153);*/
   border-radius: 5px;
   padding: 10px;
-  /*box-shadow: 0px 3px 3px rgb(162, 118, 87);*/
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6bb99+0,e6bb99+40,e6bb99+100&1+0,0.5+40,0+100 */
+   /*Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6bb99+0,e6bb99+40,e6bb99+100&1+0,0.5+40,0+100 */
   background: -moz-radial-gradient(center, ellipse cover,  rgba(230,187,153,1) 0%, rgba(230,187,153,0.5) 40%, rgba(230,187,153,0) 100%); /* FF3.6-15 */
   background: -webkit-radial-gradient(center, ellipse cover,  rgba(230,187,153,1) 0%,rgba(230,187,153,0.5) 40%,rgba(230,187,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center,  rgba(230,187,153,1) 0%,rgba(230,187,153,0.5) 40%,rgba(230,187,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bb99', endColorstr='#00e6bb99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  /*background: url("../img/bg-swirl.svg") no-repeat center/contain;*/
 }
 
+
 #intro span {
-  font-style: italic;
-  /*font-weight: bold;*/
-  font-size: 1em;
+  text-shadow: 0px 0px 3px white;
 }
 
 /*** Header Styling ***/
@@ -101,15 +102,16 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 color: white;
-background-image: url("../img/grandcanyonB.jpg");
+background-image: url("../img/grandcanyonD.jpg");
 background-repeat: no-repeat;
-background-position: center;
+background-position: top;
 background-size: cover;
 background-attachment: fixed;
-padding-top: 10%;
-border-bottom: 8px groove rgba(49, 150, 102, .8);
-box-shadow: 0px 4px 7px 3px rgb(162, 118, 87),
-          inset 0px 0px 30px 5px rgb(110, 51, 9);
+padding-top: 50px;
+border-top: 6px solid rgba(230, 187, 153, .9);
+border-bottom: 6px solid rgba(230, 187, 153, .9);
+box-shadow: 0px 4px 4px rgba(110, 51, 9, .7);
+          /*inset 0px 0px 15px 2px rgb(110, 51, 9);*/
 }
 
 #logo h1 {
@@ -117,23 +119,29 @@ font-family: 'Arizonia', cursive;
 font-size: 4em;
 font-weight: normal;
 margin-top: -35px;
+/*margin-bottom: 0;*/
 text-align: center;
-text-shadow: 3px 3px 6px black;
-background-color: rgba(59, 195, 130, .5);
+text-shadow: 2px 2px 3px #333;
+background-image: url("../img/bg-swirl.svg");
+
+background-color: rgba(49, 150, 102, 0.3);
 border-radius: 80% 5% 70% 5%;
-border: 1px solid rgba(110, 51, 9, 0.3);
+/*border: 1px solid rgba(110, 51, 9, 0.3);*/
+/*box-shadow: inset 0px 0px 15px rgba(110, 51, 9, .5);*/
 }
 
 #logo h3 {
 margin-top: 0;
 font-size: 1em;
-font-style: italic;
+/*font-style: italic;*/
 font-weight: normal;
 text-align: center;
-text-shadow: 0px 1px 4px black;
-background-color: rgba(230, 187, 153, .6);
+text-shadow: 1px 1px 3px black;
+background-image: url("../img/bg-swirl2.svg");
+background-color: rgba(230, 187, 153, .3);
 border-radius: 17% 55% 15% 75%;
-border: 1px solid rgba(110, 51, 9, 0.3);
+/*border: 1px solid rgba(110, 51, 9, 0.3);*/
+/*box-shadow: inset 0px 0px 10px rgba(110, 51, 9, .5);*/
 }
 
 #logo span {
@@ -142,8 +150,9 @@ left: 2.5em;
 }
 
 #logo {
-padding-top: 5%;
-padding-bottom: 12%;
+/*padding-top: 5%;*/
+/*background: url("../img/bg-swirl.svg") no-repeat center/contain;*/
+margin-bottom: 50px;
 }
 
 #tagline {
@@ -151,17 +160,26 @@ flex-basis: 100%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
-
-padding-bottom: 5%;
+/*padding-top: 4%;
+padding-bottom: 4%;*/
+background-color: rgba(49, 150, 102, 0.4);
+/*box-shadow: inset 0px 0px 15px 2px rgba(110, 51, 9, .5);*/
+/*border-bottom: 5px solid #a27657;*/
 }
 
 #tagline h3 {
 padding: 0 15px 0 15px;
-text-shadow: 2px 2px 4px black;
-font-size: 1.1em;
+text-shadow: 1px 1px 3px black;
+font-size: 1em;
 font-weight: normal;
-font-style: italic;
-line-height: .6;
+/*font-style: italic;*/
+margin: 10px 0px 10px 0px;
+}
+
+#tagline h3::before {
+  content: url("../img/swirl2.svg");
+  /*background-color: #6e3309;*/
+  /*border-radius: 35px;*/
 }
 
  /*** Primary Section Styling ***/
@@ -178,7 +196,7 @@ figure {
   margin-right: 0;
   position: relative;
   border: 3px solid rgb(230, 187, 153);
-  box-shadow: 0px 3px 3px rgb(162, 118, 87);
+  box-shadow: 0px 3px 1px rgb(162, 118, 87);
   background-color: rgb(230, 187, 153);
 }
 
@@ -209,7 +227,8 @@ figure:hover {
 }
 
 figure:hover > figcaption {
-  background-color: rgba(52, 163, 110, .5);
+  background-color: rgba(49, 150, 102, 0.5);
+  /*rgba(52, 163, 110, .5);*/
 }
 
 figure:hover > figcaption span {
@@ -281,26 +300,37 @@ figure:hover > .map-pin {
   flex-direction: column;
   align-items: center;
 
-  background: rgba(230,187,153,0.2);
-  background: -moz-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,187,153,0.2)), color-stop(20%, rgba(230,187,153,0.5)), color-stop(50%, rgba(230,187,153,0.5)), color-stop(73%, rgba(230,187,153,0.5)), color-stop(80%, rgba(230,187,153,0.5)), color-stop(100%, rgba(230,187,153,0.2)));
-  background: -webkit-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
-  background: -o-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
-  background: -ms-linear-gradient(top, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
-  background: linear-gradient(to bottom, rgba(230,187,153,0.2) 0%, rgba(230,187,153,0.5) 20%, rgba(230,187,153,0.5) 50%, rgba(230,187,153,0.5) 73%, rgba(230,187,153,0.5) 80%, rgba(230,187,153,0.2) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bb99', endColorstr='#e6bb99', GradientType=0 );
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e6bb99+0,e6bb99+50,e6bb99+100&0+0,1+50,0+100 */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: -moz-linear-gradient(top,  rgba(230,187,153,0) 0%, rgba(230,187,153,1) 50%, rgba(230,187,153,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(230,187,153,0) 0%,rgba(230,187,153,1) 50%,rgba(230,187,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(230,187,153,0) 0%,rgba(230,187,153,1) 50%,rgba(230,187,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e6bb99', endColorstr='#00e6bb99',GradientType=0 ); /* IE6-8 */
+
 }
 
 aside li {
-  list-style: square;
-  list-style-image: url("../img/swirl_bullet.png");
   line-height: 1.5;
 }
+
+aside ol {
+  color: #319666;
+}
+
+aside ol span {
+  color: rgb(110, 51, 9);
+}
+
+#list-2 li {
+  list-style-image: url("../img/swirl.svg");
+}
+
 
 aside p {
   font-weight: bold;
   font-size: 1.1em;
   color: #319666;
+  text-shadow: 0px 0px 3px white;
 }
 
 /*** Secondary Section Styling ***/
@@ -310,7 +340,7 @@ h2 {
   text-align: center;
   font-size: 2.5em;
   padding-top: 15px;
-  text-shadow: 1px 2px 3px grey;
+  text-shadow: 1px 2px 2px grey;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -318,6 +348,7 @@ h2 {
 #secondary strong {
   font-size: 1.2em;
   color: #319666;
+  text-shadow: 0px 0px 3px white;
   /*color: #34a36e;*/
 }
 
@@ -367,11 +398,11 @@ video {
 }
 
 #video-button {
-  width: 150px;
+  width: 160px;
   margin: 0 auto;
   border-radius: 5px 5px 0px 0px;
   position:relative;
-  top: 5px;
+  top: 4px;
 }
 
 #video-button svg {
@@ -379,6 +410,7 @@ video {
   top: 2px;
   left: 4px;
 }
+
 
 button {
   color: white;
@@ -409,9 +441,11 @@ footer {
   font-size: .8em;
   text-align: center;
   background-color: #e6bb99;
+  /*background: url("../img/bg-swirl.svg") no-repeat center/contain,
+  #e6bb99;*/
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top-width: 6px;
+  border-top: 5px solid #319666;
   box-shadow:  inset 0px 0px 15px rgb(110, 51, 9);
   color: rgb(110, 51, 9);
 }

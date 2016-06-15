@@ -3,7 +3,7 @@
 
 var slideshow1 = [
   photo1 = {
-    url: 'img/southphotos/fingerrock.jpg',
+    url: 'img/southphotos/fingerrockB.jpg',
     captionText: 'Prickly pear cactus in springtime bloom near Finger Rock trail - Tucson.'
   },
   photo2 = {
@@ -30,7 +30,7 @@ var slideshow1 = [
 
 var slideshow2 = [
   photo1 = {
-    url: 'img/centralphotos/bellrock2.jpg',
+    url: 'img/centralphotos/bellrock3.jpg',
     captionText: 'Bell Rock and Courthouse Butte formations - Sedona.'
   },
   photo2 = {

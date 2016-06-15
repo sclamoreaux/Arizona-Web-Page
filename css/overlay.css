@@ -13,9 +13,14 @@
 
 #overlay p, #overlay h3, #map-close {
   color: white;
-  cursor: pointer;
   transition: all 0.3s ease 0s;
+  text-shadow: 1px 1px 1px black;
+      /*0px 0px 10px black*/
 }
+
+ #overlay h3, #map-close {
+   cursor: pointer;
+ }
 
 #overlay h3:hover, #map-close:hover {
     color: rgb(52, 163, 110);
@@ -24,10 +29,11 @@
 #close, #map-close {
   float: right;
   padding: 5px 8px 4px 8px;
-  margin-right: 5%;
-  margin-bottom: 10px;
+  margin-right: 3%;
   font-family: sans-serif;
+  background-color: rgba(110, 51, 9, .8);
   border: 2px solid rgb(49, 150, 102);
+  box-shadow: 2px 2px 8px black;
   transition: all 0.3s ease 0s;
 }
 
@@ -36,37 +42,130 @@
 }
 
 #img-box {
-  max-width: 650px;
-  margin: 0 auto;
   text-align: center;
   clear: both;
 }
 
 #overlay img {
-  margin: 0 auto;
   border: 3px solid rgb(230, 187, 153);
-  max-height: 70vh;
-  clear: both;
   max-width: 100%;
+  box-shadow: 3px 3px 25px black;
 }
 
 #next {
   float: right;
-  padding-right: 5px;
-  margin-top: 0;
+  padding-right: 5%;
+  margin: 0;
+  font-size: 3em;
 }
 
 #prev {
   float: left;
-  padding-left: 5px;
+  padding-left: 5%;
+  margin: 0;
+  font-size: 3em;
+}
+
+/**** MAP SPECIFIC STUFF ****/
+#map-box {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 75px;
+    border: 3px solid rgb(230, 187, 153);
+    border-radius: 5px;
+}
+
+#map-close {
+  position: absolute;
+  z-index: 1000;
+  right: 2%;
+  top: 2%;
+}
+
+
+/**** RESPONSIVE STYLES ****/
+
+/*For Map*/
+
+@media handheld and (max-width: 600px) {
+
+  #map-box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+}
+
+/*For Photo Slideshows*/
+@media screen and (min-width: 790px) {
+
+
+  #img-box {
+    max-width: 900px;
+    max-height: 85vh;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  #overlay img {
+    margin: 0 auto;
+    max-height: inherit;
+  }
+
+  #prev {
+    position: absolute;
+    top: 45vh;
+    left: 5%;
+    font-size: 3em;
+  }
+
+  #next {
+    position: absolute;
+    top: 45vh;
+    right: 5%;
+    font-size: 3em;
+  }
+
+  #img-caption {
+    position: relative;
+    bottom: 40px;
+    display: inline;
+    font-size: 1.1em;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  #close {
+    position: absolute;
+    right: 3%;
+    top: 2%;
+  }
+
+}
+
+@media handheld and (orientation: landscape) and (max-width: 790px) {
+
+#overlay {
+  overflow: hidden;
+}
+
+#img-box {
+  height: 100vh;
   margin-top: 0;
 }
 
-#map-box {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-  clear: both;
-  border: 3px solid rgb(230, 187, 153);
-  border-radius: 5px;
+#prev, #next {
+  top: 38vh;
+}
+
+#close {
+  margin: 0;
+}
+
+#img-caption {
+  font-size: 0.9em;
+  bottom: 40px;
+}
+
 }
