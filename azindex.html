@@ -2,20 +2,17 @@
 <html>
 
 <head>
+
 <meta charset="utf-8">
 <title>Experience the Beauty of Arizona</title>
 <link rel="stylesheet" href="css/normalize.css" />
-
-<link rel="stylesheet" href="build/mediaelementplayer.css" />
-<link rel="stylesheet" href="css/mejs-custom-skin.css" />
-
+<link href='https://fonts.googleapis.com/css?family=Arvo:400,700|Arizonia' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/mainstyle.css">
 <link rel="stylesheet" href="css/overlay.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="build/mediaelementplayer.css" />
+<link rel="stylesheet" href="css/mejs-custom-skin.css" />
 
-<link href='https://fonts.googleapis.com/css?family=Arvo:400,700|Arizonia' rel='stylesheet' type='text/css'>
-
-<!-- <link rel="stylesheet" href="build/mejs-skins.css"> -->
 </head>
 
 <body>
@@ -46,44 +43,20 @@
 <div class="container">
   <div id="figures">
 <figure id="figure-1" class="map-it">
-  <svg class="map-pin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 16 16">
-    <defs>
-     <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
-       <stop offset="0%"   stop-color="#E6BB99"/>
-       <stop offset="100%" stop-color="#6e3309"/>
-     </linearGradient>
-    </defs>
-    <path fill="url(#linear)" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
-  </svg>
+  <img src="img/map-pin.svg" class="map-pin" alt=""/>
   <img src="img/puschridgeB.jpg" alt="Photo of Pusch Ridge in Oro Valley, AZ"/>
   <figcaption>Pusch Ridge<span> - Map it!</span></figcaption>
 </figure>
 
 
 <figure id="figure-2" class="map-it">
-  <svg class="map-pin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 16 16">
-    <defs>
-     <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
-       <stop offset="0%"   stop-color="#E6BB99"/>
-       <stop offset="100%" stop-color="#6e3309"/>
-     </linearGradient>
-    </defs>
-    <path fill="url(#linear)" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
-  </svg>
+  <img src="img/map-pin.svg" class="map-pin" alt=""/>
   <img src="img/superstitionmtnsB.jpg" alt="Photo of Superstition Mountains near Apache Junction, AZ"/>
   <figcaption>Superstition Mountains<span> - Map it!</span></figcaption>
 </figure>
 
 <figure id="figure-3" class="map-it">
-  <svg class="map-pin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 16 16">
-    <defs>
-     <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
-       <stop offset="0%"   stop-color="#E6BB99"/>
-       <stop offset="100%" stop-color="#6e3309"/>
-     </linearGradient>
-    </defs>
-    <path fill="url(#linear)" d="M8 0c-2.761 0-5 2.239-5 5 0 5 5 11 5 11s5-6 5-11c0-2.761-2.239-5-5-5zM8 8c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"></path>
-  </svg>
+  <img src="img/map-pin.svg" class="map-pin" alt=""/>
   <img src="img/sedona1B.jpg" alt="Photo of mountains near uptown Sedona, AZ"/>
   <figcaption>Mountains near uptown Sedona<span> - Map it!</span></figcaption>
 </figure>
@@ -92,7 +65,7 @@
 
   <aside id="sidebar">
 <div id="list-1">
-<p>Best Activities in AZ</p>
+<p>Top Activities in AZ</p>
   <ol>
     <li><span>Hiking</span></li>
     <li><span>Swimming</span></li>
@@ -119,15 +92,13 @@
 </section> <!---primary--->
 
 <div class="container">
-  <button id="video-button"><span data-text-swap="Hide Video">Show Video</span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 16 16">
-  <path fill="#ffffff" d="M6 4.5c0-1.381 1.119-2.5 2.5-2.5s2.5 1.119 2.5 2.5c0 1.381-1.119 2.5-2.5 2.5s-2.5-1.119-2.5-2.5zM0 4.5c0-1.381 1.119-2.5 2.5-2.5s2.5 1.119 2.5 2.5c0 1.381-1.119 2.5-2.5 2.5s-2.5-1.119-2.5-2.5zM12 9.5v-1.5c0-0.55-0.45-1-1-1h-10c-0.55 0-1 0.45-1 1v5c0 0.55 0.45 1 1 1h10c0.55 0 1-0.45 1-1v-1.5l4 2.5v-7l-4 2.5zM10 12h-8v-3h8v3z"></path>
-  </svg>
+  <button id="video-button"><span data-text-swap="Hide Video">Show Video</span>
   </button>
 </div>
 
   <div id="video-container">
 <div class="container">
-    <video class="mejs-treehouse" preload="metadata" controls poster="img/screenshot.png">
+    <video class="mejs-custom" preload="metadata" controls poster="img/screenshot.png">
       <source type="video/mp4" src="video/ArizonaClips.mp4" />
       <source type="video/webm" src="video/ArizonaClips2.webm" />
       <object type="application/x-shockwave-flash" data="build/flashmediaelement.swf">
@@ -145,11 +116,7 @@
   <div class="region">
     <figure id="figure-4">
     <img src="img/southphotos/fingerrockB.jpg" alt="Photo of prickly pear blossoms near Santa Catalina mountains, AZ"/>
-    <figcaption><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 18 16">
-    <path fill="#ffffff" d="M17 2h-1v-1c0-0.55-0.45-1-1-1h-14c-0.55 0-1 0.45-1 1v12c0 0.55 0.45 1 1 1h1v1c0 0.55 0.45 1 1 1h14c0.55 0 1-0.45 1-1v-12c0-0.55-0.45-1-1-1zM2 3v10h-0.998c-0.001-0.001-0.001-0.001-0.002-0.002v-11.996c0.001-0.001 0.001-0.001 0.002-0.002h13.996c0.001 0.001 0.001 0.001 0.002 0.002v0.998h-12c-0.55 0-1 0.45-1 1v0zM17 14.998c-0.001 0.001-0.001 0.001-0.002 0.002h-13.996c-0.001-0.001-0.001-0.001-0.002-0.002v-11.996c0.001-0.001 0.001-0.001 0.002-0.002h13.996c0.001 0.001 0.001 0.001 0.002 0.002v11.996z"></path>
-    <path fill="#ffffff" d="M15 5.5c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5 0.672-1.5 1.5-1.5 1.5 0.672 1.5 1.5z"></path>
-    <path fill="#ffffff" d="M16 14h-12v-2l3.5-6 4 5h1l3.5-3z"></path>
-    </svg> View Photo Gallery</figcaption>
+    <figcaption>View Photo Gallery</figcaption>
     </figure>
     <p><strong>Southern Arizona</strong> is encompassed by the Sonoran Desert, the epitome of rugged beauty, rich with unique flora and fauna. The city of Tucson is situated between four fantastic mountain ranges, offering countless opportunities for outdoor adventure. Explore majestic Saguaro cactus forests in Sabino Canyon, or escape to the cool pine-scented air in the forests of Mount Lemmon above.</p>
 
@@ -157,11 +124,7 @@
   <div class="region">
     <figure id="figure-5">
     <img src="img/centralphotos/bellrock3.jpg" alt="Photo of Bell Rock and Courthouse Butte near Sedona, AZ"/>
-    <figcaption><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 18 16">
-    <path fill="#ffffff" d="M17 2h-1v-1c0-0.55-0.45-1-1-1h-14c-0.55 0-1 0.45-1 1v12c0 0.55 0.45 1 1 1h1v1c0 0.55 0.45 1 1 1h14c0.55 0 1-0.45 1-1v-12c0-0.55-0.45-1-1-1zM2 3v10h-0.998c-0.001-0.001-0.001-0.001-0.002-0.002v-11.996c0.001-0.001 0.001-0.001 0.002-0.002h13.996c0.001 0.001 0.001 0.001 0.002 0.002v0.998h-12c-0.55 0-1 0.45-1 1v0zM17 14.998c-0.001 0.001-0.001 0.001-0.002 0.002h-13.996c-0.001-0.001-0.001-0.001-0.002-0.002v-11.996c0.001-0.001 0.001-0.001 0.002-0.002h13.996c0.001 0.001 0.001 0.001 0.002 0.002v11.996z"></path>
-    <path fill="#ffffff" d="M15 5.5c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5 0.672-1.5 1.5-1.5 1.5 0.672 1.5 1.5z"></path>
-    <path fill="#ffffff" d="M16 14h-12v-2l3.5-6 4 5h1l3.5-3z"></path>
-    </svg> View Photo Gallery</figcaption>
+    <figcaption>View Photo Gallery</figcaption>
     </figure>
     <p><strong>Central Arizona</strong> includes the Phoenix area, where there’s no shortage of things to do. Southeast of the city, check out the jagged peaks of the Superstition mountains. A short drive north brings you to one of the most gorgeous locales in America: Sedona. Boasting breathtaking red rock formations fringed with green juniper trees, Sedona’s magical landscape is the must-see jewel of Arizona.</p>
 
@@ -169,11 +132,7 @@
   <div class="region">
     <figure id="figure-6">
     <img src="img/northphotos/walnutcanyon.jpg" alt="Photo of Walnut Canyon near Flagstaff, AZ"/>
-    <figcaption><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 18 16">
-    <path fill="#ffffff" d="M17 2h-1v-1c0-0.55-0.45-1-1-1h-14c-0.55 0-1 0.45-1 1v12c0 0.55 0.45 1 1 1h1v1c0 0.55 0.45 1 1 1h14c0.55 0 1-0.45 1-1v-12c0-0.55-0.45-1-1-1zM2 3v10h-0.998c-0.001-0.001-0.001-0.001-0.002-0.002v-11.996c0.001-0.001 0.001-0.001 0.002-0.002h13.996c0.001 0.001 0.001 0.001 0.002 0.002v0.998h-12c-0.55 0-1 0.45-1 1v0zM17 14.998c-0.001 0.001-0.001 0.001-0.002 0.002h-13.996c-0.001-0.001-0.001-0.001-0.002-0.002v-11.996c0.001-0.001 0.001-0.001 0.002-0.002h13.996c0.001 0.001 0.001 0.001 0.002 0.002v11.996z"></path>
-    <path fill="#ffffff" d="M15 5.5c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5 0.672-1.5 1.5-1.5 1.5 0.672 1.5 1.5z"></path>
-    <path fill="#ffffff" d="M16 14h-12v-2l3.5-6 4 5h1l3.5-3z"></path>
-    </svg> View Photo Gallery</figcaption>
+    <figcaption>View Photo Gallery</figcaption>
     </figure>
     <p><strong>Northern Arizona</strong> is home to our most popular attraction and one of Earth’s greatest natural wonders, the Grand Canyon. Take a hike along the rim for the jaw-dropping views. For water recreation, venture over to Lake Powell, which winds through Glen Canyon, extending into Utah. A few hours’ drive south, you’ll encounter Flagstaff, a mountain town nestled amongst ponderosa pine forests.</p>
 
@@ -205,19 +164,13 @@
   </svg>
 </a>
 
-<a href="#" target="_blank">
+<a href="https://www.linkedin.com/in/sean-lamoreaux-163325121" target="_blank">
   <svg id="linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 16 16">
   <path fill="#319666" d="M14.5 0h-13c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h13c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM6 13h-2v-7h2v7zM5 5c-0.553 0-1-0.447-1-1s0.447-1 1-1c0.553 0 1 0.447 1 1s-0.447 1-1 1zM13 13h-2v-4c0-0.553-0.447-1-1-1s-1 0.447-1 1v4h-2v-7h2v1.241c0.412-0.566 1.044-1.241 1.75-1.241 1.244 0 2.25 1.119 2.25 2.5v4.5z"></path>
   </svg>
 </a>
 
 </div>
-<!-- <div id="social-group">
-<a href="http://twitter.com/ShonRamoro" target="_blank"><img src="img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
-<a href="http://facebook.com/seanlamoreaux" target="_blank"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon"></a>
-<a href="http://shonramoro.tumblr.com" target="_blank"><img src="img/tumblr.png" alt="Tumblr Logo" class="social-icon"></a>
-<a href="#" target="_blank"><img src="img/google-plus.png" alt="Google Plus Logo" class="social-icon"></a>
-</div> -->
 
 <div id="copyright">
 <p><span>&copy;</span> 2016 Sean Lamoreaux</p>
@@ -237,7 +190,7 @@
 
 </div>
 
-<div id="map-overlay">
+<div id="map-overlay"> <!-- map pop-up overlay -->
   <h3 id="map-close">X</h3>
   <div id="map-box">
 
@@ -251,7 +204,7 @@
 <script src="build/mediaelement-and-player.min.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
-  $('audio,video').mediaelementplayer({
+  $('video').mediaelementplayer({
     success: function(player, node) {
       $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
     },

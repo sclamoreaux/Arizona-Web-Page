@@ -15,7 +15,6 @@
   color: white;
   transition: all 0.3s ease 0s;
   text-shadow: 1px 1px 1px black;
-      /*0px 0px 10px black*/
 }
 
  #overlay h3, #map-close {
@@ -83,7 +82,6 @@
   top: 2%;
 }
 
-
 /**** RESPONSIVE STYLES ****/
 
 /*For Map*/
@@ -101,7 +99,6 @@
 /*For Photo Slideshows*/
 @media screen and (min-width: 790px) {
 
-
   #img-box {
     max-width: 900px;
     max-height: 85vh;
@@ -114,18 +111,18 @@
     max-height: inherit;
   }
 
-  #prev {
+  #prev, #next {
     position: absolute;
     top: 45vh;
-    left: 5%;
     font-size: 3em;
   }
 
+  #prev {
+    left: 5%;
+  }
+
   #next {
-    position: absolute;
-    top: 45vh;
     right: 5%;
-    font-size: 3em;
   }
 
   #img-caption {
@@ -156,7 +153,17 @@
 }
 
 #prev, #next {
+  position: absolute;
   top: 38vh;
+  font-size: 3em;
+}
+
+#prev {
+  left: 5%;
+}
+
+#next {
+  right: 5%;
 }
 
 #close {
@@ -165,7 +172,10 @@
 
 #img-caption {
   font-size: 0.9em;
-  bottom: 40px;
+  position: relative;
+  bottom: 30px;
+  display: inline;
+  background-color: rgba(0,0,0,.5);
 }
 
 }

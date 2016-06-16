@@ -12,9 +12,4 @@ $('#video-button').click(function(){
 
 });
 
-// $('#primary figure').hover(function(){
-//   $(this).toggleClass('map-shadow');
-// });
-//
-
 });

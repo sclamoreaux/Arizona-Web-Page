@@ -121,7 +121,6 @@ var OverlayUI = {
       },
   //Function that will show the slideshow.
   showOverlay : function(slideshowNumber) {
-        console.log('showing overlay...');
         imageCount = 0;
         showSelection = slideshowNumber;
         OverlayUI.setImage();
@@ -129,14 +128,12 @@ var OverlayUI = {
         OverlayUI.setNextArrow();
         $overlay.show('fast');
         $(document.body).css('overflow', 'hidden');
-        //console.log("Show event fired!");
       },
   //Function that will close slideshow.
   hideOverlay : function(event) {
         event.preventDefault();
         $overlay.hide('fast');
         $(document.body).css('overflow', 'auto');
-        //console.log("Close event fired!");
       },
 //Function that will change to next/previous photo when respective button is clicked.
   changeImage : function(event) {
@@ -146,24 +143,18 @@ var OverlayUI = {
         OverlayUI.setImage();
         OverlayUI.setPrevArrow();
         OverlayUI.setNextArrow();
-
-      //console.log('Next event fired!');
-      //console.log(imageCount);
       } else if (event.target.id == 'prev') {
         event.preventDefault();
         imageCount--;
         OverlayUI.setImage();
         OverlayUI.setPrevArrow();
         OverlayUI.setNextArrow();
-      //console.log('Prev event fired!');
-      //console.log(imageCount);
       }
     },
   //Function that will change to next/previous photo depending on which arrow key is pressed.
     //This same function will also trigger event that hides overlay when escape key is pressed.
   keyPress : function (event) {
       if (event.keyCode === 39) {
-        //console.log('Right arrow pressed!');
           if (imageCount === showSelection.length - 1) {
           return;
         } else {
@@ -174,7 +165,6 @@ var OverlayUI = {
         }
 
       } else if (event.keyCode === 37) {
-        //console.log('Left arrow pressed!');
         if (imageCount === 0) {
           return;
         } else {
@@ -195,17 +185,14 @@ var OverlayUI = {
 
 //Event handlers to display each slideshow for the corresponding figure by passing the name of slideshow array as argument.
 $('#figure-4').click(function(){
-  console.log('figure 4 clicked!');
   OverlayUI.showOverlay(slideshow1);
 });
 
 $('#figure-5').click(function(){
-  console.log('figure 5 clicked!')
   OverlayUI.showOverlay(slideshow2);
 });
 
 $('#figure-6').click(function(){
-  console.log('figure 6 clicked!')
   OverlayUI.showOverlay(slideshow3);
 });
 

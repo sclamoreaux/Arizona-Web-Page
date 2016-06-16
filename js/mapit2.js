@@ -96,24 +96,13 @@ function initMap() {
       icon: "img/map-pin.svg",
       animation: google.maps.Animation.BOUNCE
     });
-    // marker.addListener('click', toggleBounce);
 
   var infowindow = new google.maps.InfoWindow(mapInfo);
 
   marker.addListener('click', function() {
       infowindow.open(map, marker);
     });
-
-    // function toggleBounce() {
-    //   if (marker.getAnimation() !== null) {
-    //     marker.setAnimation(null);
-    //   } else {
-    //     marker.setAnimation(google.maps.Animation.BOUNCE);
-    //   }
-    // }
-
 }
-
 
 //Declare function that will be used to show the map (corresponding to the figure)
 function showMap(mapNum, infoNum) {

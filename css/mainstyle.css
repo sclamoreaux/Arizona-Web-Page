@@ -23,8 +23,13 @@ img {
   max-width: 100%;
 }
 
-a {
+  /*** Font Colors ***/
+
+#intro, section, h2, aside, a, footer {
   color: #6e3309;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -33,7 +38,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/*** Border Styling ***/
+  /*** Border Styling ***/
+
 #primary, #video-container, #secondary {
   border-top: 4px solid rgba(49,150,102,.9);
 }
@@ -44,28 +50,93 @@ figure, aside, img, #close, #map-close, iframe, .region {
 
 /*** Transitions ***/
 
-figure, figcaption, img, figcaption span, .map-pin {
-transition-duration: 0.4s;
-transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
+figure, figcaption, .region img, figcaption span, .map-pin {
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
 }
 
 footer svg,
 footer svg path,
 button,
 a {
-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
+/*** Header Styling ***/
 
-/*** Intro Styling ***/
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  background-image: url("../img/grandcanyonD.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 50px;
+  border-top: 6px solid rgba(230, 187, 153, .9);
+  border-bottom: 6px solid rgba(230, 187, 153, .9);
+  box-shadow: 0px 4px 4px rgba(110, 51, 9, .7);
+}
+
+#logo h1 {
+  font-family: 'Arizonia', cursive;
+  font-size: 4em;
+  font-weight: normal;
+  margin-top: -35px;
+  text-align: center;
+  text-shadow: 2px 2px 3px #333;
+  background-image: url("../img/bg-swirl.svg");
+  background-color: rgba(49, 150, 102, 0.3);
+  border-radius: 80% 5% 70% 5%;
+}
+
+#logo h3 {
+  margin-top: 0;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  background-image: url("../img/bg-swirl2.svg");
+  background-color: rgba(230, 187, 153, .3);
+  border-radius: 17% 55% 15% 75%;
+}
+
+#logo span {
+  position: relative;
+  left: 2.5em;
+}
+
+#logo {
+  margin-bottom: 50px;
+}
+
+#tagline {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgba(49, 150, 102, 0.4);
+}
+
+#tagline h3 {
+  padding: 0 15px 0 15px;
+  text-shadow: 1px 1px 3px black;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 10px 0px 10px 0px;
+}
+
+#tagline h3::before {
+  content: url("../img/swirl2.svg");
+}
+
+  /*** Intro Styling ***/
+
 #intro {
   padding: 15px 5px 10px 5px;
   text-align: center;
-  /*text-shadow: 1px 1px 2px white;*/
-}
-
-#intro, section, h2, aside {
-  color: rgb(110, 51, 9);
 }
 
 #intro strong {
@@ -77,7 +148,6 @@ transition-duration: 0.3s;
 
 #intro-p1 {
   border-top: 5px groove rgb(230, 187, 153);
-  /*border-bottom: 5px ridge rgb(230, 187, 153);*/
   border-radius: 5px;
   padding: 10px;
 
@@ -86,100 +156,10 @@ transition-duration: 0.3s;
   background: -webkit-radial-gradient(center, ellipse cover,  rgba(230,187,153,1) 0%,rgba(230,187,153,0.5) 40%,rgba(230,187,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center,  rgba(230,187,153,1) 0%,rgba(230,187,153,0.5) 40%,rgba(230,187,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bb99', endColorstr='#00e6bb99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-  /*background: url("../img/bg-swirl.svg") no-repeat center/contain;*/
 }
-
 
 #intro span {
   text-shadow: 0px 0px 3px white;
-}
-
-/*** Header Styling ***/
-
-header {
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-color: white;
-background-image: url("../img/grandcanyonD.jpg");
-background-repeat: no-repeat;
-background-position: top;
-background-size: cover;
-background-attachment: fixed;
-padding-top: 50px;
-border-top: 6px solid rgba(230, 187, 153, .9);
-border-bottom: 6px solid rgba(230, 187, 153, .9);
-box-shadow: 0px 4px 4px rgba(110, 51, 9, .7);
-          /*inset 0px 0px 15px 2px rgb(110, 51, 9);*/
-}
-
-#logo h1 {
-font-family: 'Arizonia', cursive;
-font-size: 4em;
-font-weight: normal;
-margin-top: -35px;
-/*margin-bottom: 0;*/
-text-align: center;
-text-shadow: 2px 2px 3px #333;
-background-image: url("../img/bg-swirl.svg");
-
-background-color: rgba(49, 150, 102, 0.3);
-border-radius: 80% 5% 70% 5%;
-/*border: 1px solid rgba(110, 51, 9, 0.3);*/
-/*box-shadow: inset 0px 0px 15px rgba(110, 51, 9, .5);*/
-}
-
-#logo h3 {
-margin-top: 0;
-font-size: 1em;
-/*font-style: italic;*/
-font-weight: normal;
-text-align: center;
-text-shadow: 1px 1px 3px black;
-background-image: url("../img/bg-swirl2.svg");
-background-color: rgba(230, 187, 153, .3);
-border-radius: 17% 55% 15% 75%;
-/*border: 1px solid rgba(110, 51, 9, 0.3);*/
-/*box-shadow: inset 0px 0px 10px rgba(110, 51, 9, .5);*/
-}
-
-#logo span {
-position: relative;
-left: 2.5em;
-}
-
-#logo {
-/*padding-top: 5%;*/
-/*background: url("../img/bg-swirl.svg") no-repeat center/contain;*/
-margin-bottom: 50px;
-}
-
-#tagline {
-flex-basis: 100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-/*padding-top: 4%;
-padding-bottom: 4%;*/
-background-color: rgba(49, 150, 102, 0.4);
-/*box-shadow: inset 0px 0px 15px 2px rgba(110, 51, 9, .5);*/
-/*border-bottom: 5px solid #a27657;*/
-}
-
-#tagline h3 {
-padding: 0 15px 0 15px;
-text-shadow: 1px 1px 3px black;
-font-size: 1em;
-font-weight: normal;
-/*font-style: italic;*/
-margin: 10px 0px 10px 0px;
-}
-
-#tagline h3::before {
-  content: url("../img/swirl2.svg");
-  /*background-color: #6e3309;*/
-  /*border-radius: 35px;*/
 }
 
  /*** Primary Section Styling ***/
@@ -221,14 +201,12 @@ figcaption span {
 
 figure:hover {
   border-color: rgb(52, 163, 110);
-  /*border-style: ridge;*/
   background-color: rgb(52, 163, 110);
   cursor: pointer;
 }
 
 figure:hover > figcaption {
   background-color: rgba(49, 150, 102, 0.5);
-  /*rgba(52, 163, 110, .5);*/
 }
 
 figure:hover > figcaption span {
@@ -287,15 +265,12 @@ figure:hover > .map-pin {
   order: 3;
 }
 
-
 /*** Sidebar Styling ***/
 
 #sidebar {
   margin: 8px 0;
   border-top: 5px groove rgb(230, 187, 153);
   border-bottom: 5px ridge rgb(230, 187, 153);
-  /*border: 3px solid rgb(230, 187, 153);
-  box-shadow: 0px 3px 3px rgb(162, 118, 87);*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,7 +293,7 @@ aside ol {
 }
 
 aside ol span {
-  color: rgb(110, 51, 9);
+  color: #6e3309;
 }
 
 #list-2 li {
@@ -349,7 +324,6 @@ h2 {
   font-size: 1.2em;
   color: #319666;
   text-shadow: 0px 0px 3px white;
-  /*color: #34a36e;*/
 }
 
 #secondary figure {
@@ -360,6 +334,13 @@ h2 {
   font-size: 1.1em;
   text-align: center;
   transform: translateY(100%);
+}
+
+#secondary figcaption::before {
+  content: url("../img/photo-icon.svg");
+  position: relative;
+  right: 3px;
+  top: 1px;
 }
 
 #secondary figure:hover > figcaption {
@@ -405,12 +386,12 @@ video {
   top: 4px;
 }
 
-#video-button svg {
+#video-button span::after {
+  content: url("../img/video-cam.svg");
   position: relative;
   top: 2px;
   left: 4px;
 }
-
 
 button {
   color: white;
@@ -429,11 +410,6 @@ button:hover {
   text-shadow: 2px 2px 5px black;
 }
 
-button:active {
-  top:4px;
-}
-
-
 /*** Footer Styling ***/
 
 footer {
@@ -441,13 +417,10 @@ footer {
   font-size: .8em;
   text-align: center;
   background-color: #e6bb99;
-  /*background: url("../img/bg-swirl.svg") no-repeat center/contain,
-  #e6bb99;*/
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 5px solid #319666;
   box-shadow:  inset 0px 0px 15px rgb(110, 51, 9);
-  color: rgb(110, 51, 9);
 }
 
 footer a:hover {
