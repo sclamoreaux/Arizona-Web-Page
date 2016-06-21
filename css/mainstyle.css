@@ -2,6 +2,13 @@
 
   /**** General Styling ***/
 
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Arvo', serif;
@@ -348,7 +355,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e6bb99', e
 
 aside li {
   line-height: 1.5;
-  font-size: 1.1em; 
+  font-size: 1.1em;
 }
 
 aside ol {
@@ -440,7 +447,7 @@ video {
 
 #video-container {
   padding: 25px 0;
-  /*display: none;*/
+  max-width: 100%;
 }
 
 #video-button {
