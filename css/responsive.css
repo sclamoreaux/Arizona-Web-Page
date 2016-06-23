@@ -40,6 +40,9 @@
 /** Re-align Boxes in Primary section **/
 
     #figures {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -75,18 +78,6 @@
           flex-basis: 100%;
     }
 
-    #primary {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-    }
-
     #sidebar {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -103,15 +94,12 @@
           justify-content: space-around;
     }
 
-
-
 }
 
 @media screen and (min-width: 790px) {
 
   #backdrop {
     background-image: url("../img/grandcanyonD3.jpg");
-    /*background-size: auto 100%;*/
   }
 
   header {
@@ -136,20 +124,16 @@
     padding: 30px 0px 30px 0px;
   }
 
-  .container {
-    margin: 0 auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  #primary-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 
-  #secondary {
+  #secondary-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -158,6 +142,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  #secondary {
     font-size: .9em;
   }
 
@@ -177,6 +164,7 @@
   }
 
   #sidebar {
+    margin: 8px 0;
     -ms-flex-preferred-size: 28%;
         flex-basis: 28%;
     -webkit-box-orient: vertical;
@@ -208,24 +196,96 @@
     font-size: 1em;
   }
 
-#social-group {
-  text-align: left;
-  float: left;
-  margin-left: 4%;
-}
+  #social-group {
+    text-align: left;
+    float: left;
+    margin-left: 4%;
+  }
 
-#copyright {
-  text-align: right;
-  float: right;
-  margin-right: 4%;
-  position: relative;
-  top: 16px;
-}
+  #copyright {
+    text-align: right;
+    float: right;
+    margin-right: 4%;
+    position: relative;
+    top: 16px;
+  }
 
-footer {
-  overflow: auto;
-  height: 150px;
-}
+  footer {
+    overflow: auto;
+    height: 150px;
+  }
+
+/*Hover animations for desktop screens*/
+
+  figcaption {
+    background-color: rgba(230, 187, 153, .7);
+  }
+
+  figcaption span {
+    position: absolute;
+    top: 100px;
+    right: 4px;
+    opacity: 0;
+    border: 1px solid rgba(255,255,255,.7);
+    border-radius: 3px;
+    padding: 2px;
+    -webkit-transition-property: top, opacity;
+    transition-property: top, opacity;
+  }
+
+  figure:hover > figcaption {
+    background-color: rgba(49, 150, 102, 0.5);
+  }
+
+  figure:hover > figcaption span {
+    top: 4px;
+    opacity: 1;
+  }
+
+  figure:hover > .map-pin {
+    top: -30px;
+    left: -10px;
+    opacity: 1;
+  }
+
+  /*Create a shadow under the map-pin*/
+  .map-it::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    top: 14px;
+    left: 6px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    background-color: rgba(34, 34, 34, 0.5);
+    box-shadow: 0px 0px 10px 5px rgba(34, 34, 34, 0.5);
+    border-radius: 50%;
+    -webkit-transition: all .4s ;
+    transition: all .4s ;
+    -webkit-transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
+            transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
+  }
+
+  .map-it:hover::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+  #secondary figcaption {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+
+  #secondary figure:hover > figcaption {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+
+  #secondary figure:hover > img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 
 }
 
@@ -277,7 +337,6 @@ footer {
   .container {
     max-width: 1010px;
   }
-
 
   #sidebar {
     font-size: 1em;

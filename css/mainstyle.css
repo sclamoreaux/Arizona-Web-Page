@@ -16,13 +16,6 @@ html, body {
 
 .container {
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   max-width: 94%;
 }
 
@@ -56,23 +49,25 @@ a:hover {
   border-top: 4px solid rgba(49,150,102,.9);
 }
 
-figure, aside, img, #close, #map-close, iframe, .region {
+figure, aside, figure img, #close, #map-close, #overlay img, .region {
   border-radius: 5px;
 }
 
 /*** Transitions ***/
 
-figure, figcaption, .region img, figcaption span, .map-pin {
+figure {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+ .region img, figcaption, figcaption span, .map-pin {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
   -webkit-transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
           transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
 }
 
-footer svg,
-footer svg path,
-button,
-a {
+footer svg, footer svg path, button, a {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -171,7 +166,7 @@ header {
   /*** Intro Styling ***/
 
 #intro {
-  padding: 15px 5px 10px 5px;
+  padding: 12px 5px 12px 5px;
   text-align: center;
 }
 
@@ -201,15 +196,8 @@ header {
  /*** Primary Section Styling ***/
 
 #primary {
-  padding-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10px;
+  padding-top: 12px;
+  margin-bottom: 12px;
 }
 
 figure {
@@ -228,7 +216,7 @@ figcaption {
   line-height: 1.2;
   padding: .5em;
   bottom: 0;
-  background-color: rgba(230, 187, 153, .7);
+  background-color: rgba(49, 150, 102, 0.5);
   text-shadow: 1px 1px 2px black;
   width: 100%;
   overflow: hidden;
@@ -236,29 +224,17 @@ figcaption {
 
 figcaption span {
   position: absolute;
-  top: 100px;
+  top: 4px;
   right: 4px;
-  opacity: 1;
   border: 1px solid rgba(255,255,255,.7);
   border-radius: 3px;
   padding: 2px;
-  -webkit-transition-property: top, opacity;
-  transition-property: top, opacity;
 }
 
 figure:hover {
   border-color: rgb(52, 163, 110);
   background-color: rgb(52, 163, 110);
   cursor: pointer;
-}
-
-figure:hover > figcaption {
-  background-color: rgba(49, 150, 102, 0.5);
-}
-
-figure:hover > figcaption span {
-  top: 4px;
-  opacity: 1;
 }
 
 .map-pin {
@@ -268,70 +244,13 @@ figure:hover > figcaption span {
   opacity: 0;
   -webkit-transition-property: top, left, opacity;
   transition-property: top, left, opacity;
-}
-
-figure:hover > .map-pin {
-  top: -30px;
-  left: -10px;
-  opacity: 1;
-}
-
-/*Create a shadow under the map-pin*/
-.map-it::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 5px;
-  top: 14px;
-  left: 6px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  background-color: rgba(34, 34, 34, 0.5);
-  box-shadow: 0px 0px 10px 5px rgba(34, 34, 34, 0.5);
-  border-radius: 50%;
-  -webkit-transition: all .4s ;
-  transition: all .4s ;
-  -webkit-transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
-          transition-timing-function: cubic-bezier(.7,-0.39,.31,1.38);
-}
-
-.map-it:hover::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-#figures {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#figure-3 {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-#figure-1 {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-#figure-2 {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  z-index: 200;
 }
 
 /*** Sidebar Styling ***/
 
 #sidebar {
-  margin: 8px 0;
+  margin: 20px 0;
   border-top: 5px groove rgb(230, 187, 153);
   border-bottom: 5px ridge rgb(230, 187, 153);
   display: -webkit-box;
@@ -403,25 +322,14 @@ h2 {
 #secondary figcaption {
   font-size: 1.1em;
   text-align: center;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
 }
 
-#secondary figcaption::before {
-  content: url("../img/photo-icon.svg");
+#secondary figcaption img {
+  display: inline;
+  border-radius: 0;
   position: relative;
   right: 3px;
   top: 1px;
-}
-
-#secondary figure:hover > figcaption {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-#secondary figure:hover > img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .region {
@@ -440,7 +348,6 @@ h2 {
 
 /*** Video Slider Styling ***/
 
-
 video {
   max-width: 100%;
 }
@@ -448,6 +355,14 @@ video {
 #video-container {
   padding: 25px 0;
   max-width: 100%;
+}
+
+#button-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #video-button {
