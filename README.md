@@ -12,11 +12,8 @@ This Arizona-themed web page is one of my first self-directed projects created i
 6. jQuery to make an expandable/collapsible element which is activated by a button that switches between "Show"/"Hide".
 7. Utilizing a JS plug-in called MediaElement.js to create a customized video player element that will look and function consistently across browsers.
 
+I edited photos and graphics using Adobe Photoshop and/or Google Picasa. I used Git for version control. The short video clip was edited in iMovie.
+
 ATTN: All photographs belong to me. You may not redistribute or re-purpose them in any way.
 
 Thank you for checking out this project. Connect with me on LinkedIn: https://www.linkedin.com/in/sean-lamoreaux-163325121.
-
-
-
-
->>>>>>> 850a05b5f912ee47ac9470b8a5dc81d56fb28c25
