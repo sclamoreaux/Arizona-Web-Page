@@ -89,7 +89,7 @@
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding: 0 2% 0 3%;
+      padding: 0 3% 0 3%;
       -ms-flex-pack: distribute;
           justify-content: space-around;
     }
@@ -165,8 +165,8 @@
 
   #sidebar {
     margin: 8px 0;
-    -ms-flex-preferred-size: 28%;
-        flex-basis: 28%;
+    /*-ms-flex-preferred-size: 28%;
+        flex-basis: 28%;*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -196,24 +196,31 @@
     font-size: 1em;
   }
 
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   #social-group {
     text-align: left;
-    float: left;
+    flex-basis: 48%;
+    /*float: left;*/
     margin-left: 4%;
   }
 
   #copyright {
     text-align: right;
-    float: right;
+    flex-basis: 48%;
+    /*float: right;*/
     margin-right: 4%;
-    position: relative;
-    top: 16px;
+    /*position: relative;
+    top: 16px;*/
   }
 
-  footer {
+  /*footer {
     overflow: auto;
     height: 150px;
-  }
+  }*/
 
 /*Hover animations for desktop screens*/
 

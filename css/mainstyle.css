@@ -49,7 +49,7 @@ a:hover {
   border-top: 4px solid rgba(49,150,102,.9);
 }
 
-figure, aside, figure img, #close, #map-close, #overlay img, .region {
+figure, aside, figure img, #close, .map-close, #overlay img, .region {
   border-radius: 5px;
 }
 
@@ -400,6 +400,8 @@ button:hover {
 /*** Footer Styling ***/
 
 footer {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   font-size: .8em;
   text-align: center;
@@ -443,4 +445,8 @@ footer svg:hover path {
 
 #copyright span {
   color: #319666;
+}
+
+#copyright {
+  margin: 0 3%;
 }

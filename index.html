@@ -178,8 +178,8 @@
 </div>
 
 <div id="copyright">
-<p><span>&copy;</span> 2016 Sean Lamoreaux</p>
-<p>Not an official site. For portfolio purposes only.</p>
+<p><span>&copy;</span> 2016 Sean Lamoreaux <span>&#47;</span> <a href="https://github.com/sclamoreaux/Arizona-Web-Page" target="_blank">About This Project</a></p>
+<p>This page is built to work in the latest versions of Chrome, Safari, Firefox, Opera, and Microsoft IE/Edge. If something appears dysfunctional, please consider updating your browser. </p>
 </div>
 
 </footer>
@@ -187,7 +187,7 @@
 </div>
 
 <div id="overlay"> <!-- photo slideshow/gallery -->
-  <h3 id="close">X</h3>
+  <h3 id="close"><img src="img/cross.svg" /></h3>
   <div id="img-box">
     <img id="img-holder" src="#"/>
     <p id="img-caption"></p>
@@ -197,17 +197,28 @@
 
 </div>
 
-<div id="map-overlay"> <!-- map pop-up overlay -->
-  <h3 id="map-close">X</h3>
-  <div id="map-box">
+<div class="map-overlay"> <!-- map pop-up overlay -->
+  <h3 class="map-close"><img src="img/cross.svg" /></h3>
+  <div class="map-box" id="map1-box">
+  </div>
+</div>
 
+<div class="map-overlay"> <!-- map pop-up overlay -->
+  <h3 class="map-close"><img src="img/cross.svg" /></h3>
+  <div class="map-box" id="map2-box">
+  </div>
+</div>
+
+<div class="map-overlay"> <!-- map pop-up overlay -->
+  <h3 class="map-close"><img src="img/cross.svg" /></h3>
+  <div class="map-box" id="map3-box">
   </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/slideshow.v4.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/mapit2.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/mapit.v3.js" type="text/javascript" charset="utf-8"></script>
 <script src="build/mediaelement-and-player.min.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
@@ -220,10 +231,6 @@
   });
 </script>
 
-
 </body>
-
-
-
 
 </html>
