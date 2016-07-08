@@ -2,6 +2,8 @@
 
 "Experience the Beauty of Arizona"
 
+ABOUT THIS PROJECT
+
 This Arizona-themed web page is one of my first self-directed projects created in order to practice the web development skills I've been learning the past several months. It pays tribute to the beautiful natural landscape of my home state, utilizing several foundational techniques of web development, including the following:
 
 1. HTML5 tags to organize the markup logically.
@@ -12,8 +14,12 @@ This Arizona-themed web page is one of my first self-directed projects created i
 6. jQuery to make an expandable/collapsible element which is activated by a button that switches between "Show"/"Hide".
 7. Utilizing a JS plug-in called MediaElement.js to create a customized video player element that will look and function consistently across browsers.
 
-I edited photos and graphics using Adobe Photoshop and/or Google Picasa. I used Git for version control. The short video clip was edited in iMovie.
+Other tools used: I edited photos and graphics using Adobe Photoshop and/or Google Picasa. I used Git for version control. The short video clip was edited in iMovie.
 
-ATTN: All photographs belong to me. You may not redistribute or re-purpose them in any way.
+GENERAL INFO
+
+All photographs belong to me. You may not redistribute or re-purpose them in any way.
+
+This page is built to work in the latest versions of Chrome, Safari, Firefox, Opera, and Microsoft IE/Edge.
 
 Thank you for checking out this project. Connect with me on LinkedIn: https://www.linkedin.com/in/sean-lamoreaux-163325121.

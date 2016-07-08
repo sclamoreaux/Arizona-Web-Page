@@ -403,13 +403,17 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  font-size: .8em;
+  font-size: .9em;
   text-align: center;
   background-color: #e6bb99;
   padding-top: 10px;
   padding-bottom: 10px;
   border-top: 5px solid #319666;
-  box-shadow:  inset 0px 0px 15px rgb(110, 51, 9);
+  box-shadow:  inset 0px 0px 15px #6e3309;
+}
+
+footer #browser-info {
+  font-size: .85em;
 }
 
 footer a:hover {
