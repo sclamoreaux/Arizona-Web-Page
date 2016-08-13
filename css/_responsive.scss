@@ -94,6 +94,32 @@
           justify-content: space-around;
     }
 
+
+    #footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #social-group {
+      text-align: left;
+      flex-basis: 48%;
+      /*float: left;*/
+      margin-left: 4%;
+    }
+
+    #copyright {
+      text-align: right;
+      flex-basis: 48%;
+      /*float: right;*/
+      margin-right: 4%;
+      /*position: relative;
+      top: 16px;*/
+    }
+
+    #footer-logo {
+      float: right;
+    }
+
 }
 
 @media screen and (min-width: 790px) {
@@ -196,31 +222,7 @@
     font-size: 1em;
   }
 
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
-  #social-group {
-    text-align: left;
-    flex-basis: 48%;
-    /*float: left;*/
-    margin-left: 4%;
-  }
-
-  #copyright {
-    text-align: right;
-    flex-basis: 48%;
-    /*float: right;*/
-    margin-right: 4%;
-    /*position: relative;
-    top: 16px;*/
-  }
-
-  /*footer {
-    overflow: auto;
-    height: 150px;
-  }*/
 
 /*Hover animations for desktop screens*/
 

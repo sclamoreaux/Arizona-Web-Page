@@ -698,8 +698,6 @@ button:hover {
 
 /*** Footer Styling ***/
 footer {
-  display: flex;
-  flex-direction: column;
   margin-top: 30px;
   font-size: .9em;
   text-align: center;
@@ -708,6 +706,10 @@ footer {
   padding-bottom: 10px;
   border-top: 5px solid #319666;
   box-shadow: inset 0px 0px 15px #6e3309; }
+
+#footer-container {
+  display: flex;
+  flex-direction: column; }
 
 footer #browser-info {
   font-size: .85em; }
@@ -742,7 +744,16 @@ footer svg:hover path {
   color: #319666; }
 
 #copyright {
-  margin: 0 3%; }
+  margin: 0 3%;
+  padding-top: 5px; }
+
+#copyright p {
+  clear: both;
+  margin-top: 0; }
+
+#footer-logo {
+  width: 135px;
+  margin: 0 auto; }
 
 /*** OVERLAY STYLES (Photo Slideshows and Maps) ***/
 #overlay, .map-overlay {
@@ -969,7 +980,28 @@ footer svg:hover path {
     align-items: flex-start;
     padding: 0 3% 0 3%;
     -ms-flex-pack: distribute;
-    justify-content: space-around; } }
+    justify-content: space-around; }
+
+  #footer-container {
+    flex-direction: row;
+    justify-content: space-between; }
+
+  #social-group {
+    text-align: left;
+    flex-basis: 48%;
+    /*float: left;*/
+    margin-left: 4%; }
+
+  #copyright {
+    text-align: right;
+    flex-basis: 48%;
+    /*float: right;*/
+    margin-right: 4%;
+    /*position: relative;
+    top: 16px;*/ }
+
+  #footer-logo {
+    float: right; } }
 @media screen and (min-width: 790px) {
   #backdrop {
     background-image: url("../img/grandcanyonD3.jpg"); }
@@ -1052,28 +1084,6 @@ footer svg:hover path {
     line-height: 1.6;
     font-size: 1em; }
 
-  footer {
-    flex-direction: row;
-    justify-content: space-between; }
-
-  #social-group {
-    text-align: left;
-    flex-basis: 48%;
-    /*float: left;*/
-    margin-left: 4%; }
-
-  #copyright {
-    text-align: right;
-    flex-basis: 48%;
-    /*float: right;*/
-    margin-right: 4%;
-    /*position: relative;
-    top: 16px;*/ }
-
-  /*footer {
-    overflow: auto;
-    height: 150px;
-  }*/
   /*Hover animations for desktop screens*/
   figcaption {
     background-color: rgba(230, 187, 153, 0.7); }

@@ -400,8 +400,6 @@ button:hover {
 /*** Footer Styling ***/
 
 footer {
-  display: flex;
-  flex-direction: column;
   margin-top: 30px;
   font-size: .9em;
   text-align: center;
@@ -410,6 +408,11 @@ footer {
   padding-bottom: 10px;
   border-top: 5px solid #319666;
   box-shadow:  inset 0px 0px 15px #6e3309;
+}
+
+#footer-container {
+  display: flex;
+  flex-direction: column;
 }
 
 footer #browser-info {
@@ -453,4 +456,15 @@ footer svg:hover path {
 
 #copyright {
   margin: 0 3%;
+  padding-top: 5px;
+}
+
+#copyright p {
+  clear: both;
+  margin-top: 0;
+}
+
+#footer-logo {
+  width: 135px;
+  margin: 0 auto;
 }
