@@ -6,9 +6,9 @@ var $script = $('<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSy
 //Store map info(window) content, with blank content to be passed value in showMap function
 var mapInfo = { content: '' };
 //Store text for info window for each map
-var figure1Info = "<p>Begin hiking here at Linda Vista Trailhead to<br> enjoy views of majestic Pusch Ridge.</p>";
-var figure2Info = "<p>Visit Lost Dutchman State Park to see<br> the striking Superstition Mountains.</p>";
-var figure3Info = "<p>Check out the views of Sedona's red cliffs while<br> sipping a refreshing beverage here at Pink Java Cafe.</p>";
+var figure1Info = '<p style="width: 175px">Begin hiking here at Linda Vista Trailhead to enjoy views of majestic Pusch Ridge.</p>';
+var figure2Info = '<p style="width: 175px" margin="0">Visit Lost Dutchman State Park to see the striking Superstition Mountains.</p>';
+var figure3Info = '<p style="width: 175px">Check out the views of Sedona\'s red cliffs while sipping a refreshing beverage here at Pink Java Cafe.</p>';
 
 //Store map location/coordinates data for each map in VARIABLES
 var figure1Map = {lat: 32.380549, lng: -110.961087};
@@ -110,13 +110,13 @@ function showMap(mapNum, infoNum) {
   mapInfo.content = infoNum;
   $('body').append($script);
 
-  $mapOverlay.show('fast');
+  $mapOverlay.fadeIn('fast');
   $(document.body).css('overflow', 'hidden');
 }
 
 //Declare function that will be used to close the figure-map
 function closeMap() {
-  $mapOverlay.hide('fast');
+  $mapOverlay.fadeOut('fast');
   $script.remove();
   mapOptions.center = ''; //Clear the map info as it closes
   $(document.body).css('overflow', 'auto');

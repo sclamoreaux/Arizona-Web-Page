@@ -1,3 +1,14 @@
+
+
+/*CSS for adding photo gallery icon as pseudo-element*/
+#secondary figcaption::before {
+  content: url("../img/photo-icon.svg");
+  position: relative;
+  right: 3px;
+  top: 1px;
+}
+
+
 /*Old CSS for aside gradient*/
 
 background: rgba(230,187,153,0.2);

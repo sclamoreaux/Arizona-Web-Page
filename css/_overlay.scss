@@ -1,6 +1,6 @@
 /*** OVERLAY STYLES (Photo Slideshows and Maps) ***/
 
-#overlay, #map-overlay {
+#overlay, .map-overlay {
   display: none;
   background: rgba(0,0,0,0.7);
 	width: 100%;
@@ -9,34 +9,38 @@
 	top: 0;
 	left: 0;
   overflow: scroll;
+  z-index: 300;
 }
 
-#overlay p, #overlay h3, #map-close {
+#overlay p, #overlay h3, .map-close {
   color: white;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-shadow: 1px 1px 1px black;
 }
 
- #overlay h3, #map-close {
+ #overlay h3, .map-close {
    cursor: pointer;
  }
 
-#overlay h3:hover, #map-close:hover {
+#overlay h3:hover, .map-close:hover {
     color: rgb(52, 163, 110);
 }
 
-#close, #map-close {
+#close, .map-close {
   float: right;
-  padding: 5px 8px 4px 8px;
+  padding: 8px 8px 8px 8px;
   margin-right: 3%;
-  font-family: sans-serif;
+  margin-bottom: 15px;
+  margin-top: 10px;
   background-color: rgba(110, 51, 9, .8);
   border: 2px solid rgb(49, 150, 102);
   box-shadow: 2px 2px 8px black;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
-#close:hover, #map-close:hover {
+#close:hover, .map-close:hover {
   border-color: rgb(230, 187, 153);
 }
 
@@ -45,7 +49,7 @@
   clear: both;
 }
 
-#overlay img {
+#img-holder {
   border: 3px solid rgb(230, 187, 153);
   max-width: 100%;
   box-shadow: 3px 3px 25px black;
@@ -54,19 +58,20 @@
 #next {
   float: right;
   padding-right: 5%;
-  margin: 0;
-  font-size: 3em;
 }
 
 #prev {
   float: left;
   padding-left: 5%;
+}
+
+#next, #prev {
   margin: 0;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 /**** MAP SPECIFIC STUFF ****/
-#map-box {
+.map-box {
     width: 600px;
     height: 500px;
     margin: 0 auto;
@@ -75,7 +80,7 @@
     border-radius: 5px;
 }
 
-#map-close {
+.map-close {
   position: absolute;
   z-index: 1000;
   right: 2%;
@@ -86,12 +91,13 @@
 
 /*For Map*/
 
-@media handheld and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
-  #map-box {
+  .map-box {
     width: 100%;
     height: 100%;
     margin: 0;
+    border-radius: 0;
   }
 
 }
@@ -114,7 +120,6 @@
   #prev, #next {
     position: absolute;
     top: 45vh;
-    font-size: 3em;
   }
 
   #prev {
@@ -141,33 +146,38 @@
 
 }
 
-@media handheld and (orientation: landscape) and (max-width: 790px) {
+@media screen and (orientation: landscape) and (max-width: 790px) {
 
 #overlay {
   overflow: hidden;
 }
 
 #img-box {
-  height: 100vh;
+  max-height: 100vh;
   margin-top: 0;
+}
+
+#overlay img {
+  max-height: inherit;
+  margin: 0 auto;
 }
 
 #prev, #next {
   position: absolute;
   top: 38vh;
-  font-size: 3em;
 }
 
 #prev {
-  left: 5%;
+  left: 2%;
 }
 
 #next {
-  right: 5%;
+  right: 2%;
 }
 
 #close {
-  margin: 0;
+  position: absolute;
+  right: 1%;
 }
 
 #img-caption {

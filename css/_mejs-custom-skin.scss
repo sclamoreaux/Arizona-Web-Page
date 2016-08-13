@@ -1,37 +1,28 @@
 .mejs-custom .mejs-controls {
   background: rgba(110, 51, 9, .6);
-  height:30px;
+  /*height:30px;*/
 }
 
 .mejs-custom .mejs-controls .mejs-button button {
   outline: none;
 }
 
-.mejs-custom .mejs-controls .mejs-time-rail {
-  padding: 0;
-}
-
-.mejs-custom .mejs-controls .mejs-time-rail span {
-  height: 100%;
-}
-
 .mejs-custom .mejs-controls .mejs-time-rail .mejs-time-total,
 .mejs-custom .mejs-controls .mejs-time-rail .mejs-time-loaded,
 .mejs-custom .mejs-controls .mejs-time-rail .mejs-time-buffering,
 .mejs-custom .mejs-controls .mejs-time-rail .mejs-time-handle {
-  background: rgba(49, 150, 102, .6);
-  margin: 0;
-}
-
-.mejs-custom .mejs-controls .mejs-time-rail .mejs-time-current {
   background: rgba(230, 187, 153, .8);
 }
 
+.mejs-custom .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: rgba(49, 150, 102, .7);
+}
+
 .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
-  border: none;
-  background: none;
-  text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
-  font-family: Helvetica, Arial;
-  font-size: 13px;
-  color: #FFF;
+  border-color: rgb(110, 51, 9);
+  color: rgb(110, 51, 9);
+}
+
+.mejs-controls .mejs-volume-button .mejs-volume-slider {
+  background-color: rgba(49, 150, 102, .8);
 }
